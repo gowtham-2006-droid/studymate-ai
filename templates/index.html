@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyMate AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>StudyMate <span>AI</span></h2>
+
+            <button class="new-chat">+ New Chat</button>
+
+            <div class="menu-list" id="sidebar-menu">
+                <div class="menu-indicator"></div>
+                <button class="menu-item active" onclick="window.location.href='/chat'">AI Assistant</button>
+                <button class="menu-item" onclick="window.location.href='/note-summarizer'">Note Summarizer</button>
+                <button class="menu-item" onclick="window.location.href='/question-generator'">Question Generator</button>
+                <button class="menu-item" onclick="window.location.href='/quiz-creator'">Quiz Creator</button>
+                <button class="menu-item" onclick="window.location.href='/code-explainer'">Code Explainer</button>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">G</div>
+
+                <div>
+                    <h4>Student</h4>
+                    <p>Free account</p>
+                </div>
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <h3>AI Study Assistant</h3>
+                    <p>your personal learning companion</p>
+                </div>
+
+                <div class="status">
+                    <span></span>online
+                </div>
+            </header>
+            <section class="welcome">
+                <div class="welcome-icon">✦</div>
+
+                <h1>What do you want to learn today?</h1>
+
+                <p>
+                    Your personal AI study companion.
+                    Ask questions, explore concepts and learn smarter.
+                </p>
+                <div class="chat-input">
+
+                    <input
+                        type="text"
+                        id="user-input"
+                        placeholder="Ask anything about your studies..."
+                        autocomplete="off"
+                    >
+
+                    <button id="send-btn" type="button">
+                        ➤
+                    </button>
+
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

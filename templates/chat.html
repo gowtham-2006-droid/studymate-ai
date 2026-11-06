@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyMate AI | Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h2>StudyMate <span>AI</span></h2>
+
+            <button class="new-chat" onclick="window.location.href='/'">
+                + New Chat
+            </button>
+
+            <h4>MENU</h4>
+
+            <div class="menu-list">
+
+                <button class="menu-item active">
+                    AI Assistant
+                </button>
+
+                <button class="menu-item" onclick="window.location.href='/'">
+                    Home
+                </button>
+
+                <button class="menu-item">
+                    Note Summarizer
+                </button>
+
+                <button class="menu-item">
+                    Question Generator
+                </button>
+
+                <button class="menu-item">
+                    Quiz Creator
+                </button>
+
+                <button class="menu-item">
+                    Code Explainer
+                </button>
+
+            </div>
+
+            <!-- Profile -->
+            <div class="profile">
+
+                <div class="avatar">G</div>
+
+                <div>
+                    <h4>Student</h4>
+                    <p>Free account</p>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="topbar">
+
+                <div>
+                    <h3>AI Assistant</h3>
+                    <p>Your personal learning companion</p>
+                </div>
+
+                <div class="status">
+                    <span></span> Online
+                </div>
+
+            </header>
+
+
+            <!-- Chat Section -->
+            <section class="chat-container">
+
+                <div class="chat-heading">
+
+                    <h1>Ask StudyMate AI</h1>
+
+                    <p>
+                        Ask questions, understand concepts
+                        and improve your learning.
+                    </p>
+
+                </div>
+
+
+                <!-- Messages -->
+                <div id="chat-messages">
+
+                    <div class="ai-message">
+                        Hello! I'm StudyMate AI.
+                        What would you like to learn today?
+                    </div>
+
+                </div>
+
+
+                <!-- Input Area -->
+                <div class="chat-input">
+
+                    <input
+                        type="text"
+                        id="user-input"
+                        placeholder="Ask anything about your studies..."
+                        autocomplete="off"
+                    >
+
+                    <button id="send-btn" type="button">
+                        ➤
+                    </button>
+
+                </div>
+
+
+                <p class="disclaimer">
+                    StudyMate AI can make mistakes.
+                    Verify important information.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
