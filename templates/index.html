@@ -21,7 +21,8 @@
                 <div class="menu-indicator"></div>
                 <button class="menu-item active" onclick="window.location.href='/chat'">AI Assistant</button>
                 <button class="menu-item" onclick="window.location.href='/note-summarizer'">Note Summarizer</button>
-                <button class="menu-item" onclick="window.location.href='/question-generator'">Question Generator</button>
+                <button class="menu-item" onclick="window.location.href='/question-generator'">Question
+                    Generator</button>
                 <button class="menu-item" onclick="window.location.href='/quiz-creator'">Quiz Creator</button>
                 <button class="menu-item" onclick="window.location.href='/code-explainer'">Code Explainer</button>
             </div>
@@ -59,14 +60,10 @@
                 </p>
                 <div class="chat-input">
 
-                    <input
-                        type="text"
-                        id="user-input"
-                        placeholder="Ask anything about your studies..."
-                        autocomplete="off"
-                    >
+                    <input type="text" id="user-input" placeholder="Ask anything about your studies..."
+                        autocomplete="off">
 
-                    <button id="send-btn" type="button">
+                    <button id="send-btn" type="button" onclick="window.location.href='/chat'">
                         ➤
                     </button>
 
